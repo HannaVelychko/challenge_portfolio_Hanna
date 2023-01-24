@@ -56,7 +56,7 @@ Change_Language_Label_XPAth
 2. /html/body/div/form/div/div[2]/div/div
 3. //child::div[2]/div/div
 
-Change_language_Input_Xtath
+Change_language_Input_Xpath
 1. //*[@id="__next"]/form/div/div[2]/div/input
 2. /html/body/div/form/div/div[2]/div/input
 3. //*[contains(@class, "MuiSelect-nativeInput")] 
