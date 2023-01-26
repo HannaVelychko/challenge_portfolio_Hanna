@@ -7,7 +7,7 @@ class Dashboard(BasePage):
         button_Players_xpath = "//*/div/following-sibling::ul[1]/div[2]"
         button_Language_xpath = "//*/div/following-sibling::ul[2]/div[1]"
         button_SignOut_xpath = "//*/div/following-sibling::ul[2]/div[2]"
-        FootbalTeam_Logo_xpath = "//*[@title='Logo Scouts Panel']"
+        footballTeam_Logo_xpath = "//*[@title='Logo Scouts Panel']"
         header_ScoutsPanel_xpath = "//ancestor::div/h2"
         paragraph_ScoutsPanel_xpath = "//ancestor::div/p"
         button_Link_DevTeamContact_xpath = "//*[1][name() = 'a']"
