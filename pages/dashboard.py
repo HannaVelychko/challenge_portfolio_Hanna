@@ -1,4 +1,15 @@
+import time
 from pages.base_page import BasePage
+
+class Dashboard(BasePage):
+        expected_title = "Scouts Panel"
+        dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en'
+
+        def title_of_page(self):
+            time.sleep(5)
+            assert self.get_page_title(self.dashboard_url) == self.expected_title
+
+
 
 
 class Dashboard(BasePage):
@@ -18,9 +29,6 @@ class Dashboard(BasePage):
         div_Matches_Icon_xpath = "//*/div/following-sibling::div[1]/div[2]/div"
         div_Reports_Icon_xpath = "//*/div/following-sibling::div[2]"
         div_EventsCount_Icon_xpath = "//*/div/following-sibling::div[3]"
-
-
-
 
 
 pass

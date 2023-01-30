@@ -40,6 +40,7 @@ class TestMediumPage(unittest.TestCase):
         return self.driver.title
         expected_title = "Medium – Where good ideas find you."
         assert actual_title == expected_title
+
     @classmethod
     def tearDown(self):
         self.driver.quit()
