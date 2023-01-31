@@ -7,6 +7,9 @@ The opportunity to work remotely and to get good salary is the main motivating t
 My goal is become a good professional. 
 
 TASK 2 : Selectors
+
+Subtask 1: Searching for selectors on the login page
+
 Scots_Panel_Xpath
 1. //*[@id="_next"]/form/div/div[1]/h5
 2. //h5[text()="Scouts PAnel"]
