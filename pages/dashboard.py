@@ -1,4 +1,8 @@
 import time
+from lib2to3.pgen2 import driver
+
+from selenium.webdriver.support.wait import WebDriverWait
+
 from pages.base_page import BasePage
 
 
@@ -21,7 +25,7 @@ class Dashboard(BasePage):
     div_Matches_Icon_xpath = "//*/div/following-sibling::div[1]/div[2]/div"
     div_Reports_Icon_xpath = "//*/div/following-sibling::div[2]"
     div_EventsCount_Icon_xpath = "//*/div/following-sibling::div[3]"
-
+    wait = WebDriverWait(driver, 10)
     def title_of_page(self):
-        time.sleep(5)
+        self.wait_for_element_to_be_clicable(self.button_Language_xpath)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
